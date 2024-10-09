@@ -1,6 +1,6 @@
 # WorldSimpleSet
 軽量なワールドイベントコントロールプラグイン。  
-[ [中文](https://github.com/reuAC/WorldSimpleSet/blob/reuAC/README_EN.md) | [English](https://github.com/reuAC/WorldSimpleSet/blob/reuAC/README_EN.md) | 日本語 ]
+[ [中文](https://github.com/reuAC/WorldSimpleSet/blob/reuAC/README.md) | [English](https://github.com/reuAC/WorldSimpleSet/blob/reuAC/README_EN.md) | 日本語 ]
 
 ## 紹介
 このプラグインはSpigot 1.8以上に対応しています。  
