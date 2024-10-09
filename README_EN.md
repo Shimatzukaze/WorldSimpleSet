@@ -1,6 +1,6 @@
 # WorldSimpleSet
 A lightweight world event control plugin.  
-[ [中文](https://github.com/reuAC/WorldSimpleSet/blob/reuAC/README_EN.md) | English | [日本語](https://github.com/reuAC/WorldSimpleSet/blob/reuAC/README_JP.md) ]
+[ [中文](https://github.com/reuAC/WorldSimpleSet/blob/reuAC/README.md) | English | [日本語](https://github.com/reuAC/WorldSimpleSet/blob/reuAC/README_JP.md) ]
 
 ## Introduction
 This plugin is compatible with Spigot 1.8 and above.  
