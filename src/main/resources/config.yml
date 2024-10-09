@@ -1,0 +1,14 @@
+BlockBreak: false
+BlockPlace: false
+BlockBurn: false
+BlockSpread: false
+BlockIgnite: false
+BlockGrow: false
+BlockDamage: false
+BlockFade: false
+PlayerDropItem: false
+PlayerInteract: false
+PlayerInteractEntity: false
+EntityDamageByBlock: false
+EntityDamageByEntity: false
+Chat: false

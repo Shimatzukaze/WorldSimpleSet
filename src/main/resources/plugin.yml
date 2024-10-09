@@ -1,0 +1,9 @@
+name: WorldSimpleSet
+version: '${project.version}'
+main: com.worldsimpleset.WorldSimpleSet
+commands:
+  worldsimpleset:
+    description: "Reload config"
+    permissions: worldsimpleset.main
+    aliases: wss
+
