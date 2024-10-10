@@ -13,78 +13,90 @@ import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 
 public class WssListener implements Listener {
+
+    static public boolean cancelBlockBreak;
+    static public boolean cancelBlockBurn;
+    static public boolean cancelChat;
+    static public boolean cancelBlockSpread;
+    static public boolean cancelBlockPlace;
+    static public boolean cancelBlockIgnite;
+    static public boolean cancelBlockGrow;
+    static public boolean cancelBlockDamage;
+    static public boolean cancelBlockFade;
+    static public boolean cancelPlayerDropItem;
+    static public boolean cancelPlayerInteract;
+    static public boolean cancelPlayerInteractEntity;
+    static public boolean cancelEntityDamageByEntity;
+    static public boolean cancelEntityDamageByBlock;
+
     @EventHandler
     public void onBlockBreak(BlockBreakEvent event) {
-        setEventCancelled(event, "BlockBreak");
+        event.setCancelled(cancelBlockBreak);
     }
 
     @EventHandler
     public void onBlockBurn(BlockBurnEvent event) {
-        setEventCancelled(event, "BlockBurn");
+        event.setCancelled(cancelBlockBurn);
     }
 
     @EventHandler
     public void onAsyncPlayerChat(AsyncPlayerChatEvent event) {
-        setEventCancelled(event, "Chat");
+        event.setCancelled(cancelChat);
     }
 
     @EventHandler
     public void onBlockSpread(BlockSpreadEvent event) {
-        setEventCancelled(event, "BlockSpread");
+        event.setCancelled(cancelBlockSpread);
     }
 
     @EventHandler
     public void onBlockPlace(BlockPlaceEvent event) {
-        setEventCancelled(event, "BlockPlace");
+        event.setCancelled(cancelBlockPlace);
     }
 
     @EventHandler
     public void onBlockIgnite(BlockIgniteEvent event) {
-        setEventCancelled(event, "BlockIgnite");
+        event.setCancelled(cancelBlockIgnite);
     }
 
     @EventHandler
     public void onBlockGrow(BlockGrowEvent event) {
-        setEventCancelled(event, "BlockGrow");
+        event.setCancelled(cancelBlockGrow);
     }
 
     @EventHandler
     public void onBlockDamage(BlockDamageEvent event) {
-        setEventCancelled(event, "BlockDamage");
+        event.setCancelled(cancelBlockDamage);
     }
 
     @EventHandler
     public void onBlockFade(BlockFadeEvent event) {
-        setEventCancelled(event, "BlockFade");
+        event.setCancelled(cancelBlockFade);
     }
 
     @EventHandler
     public void onPlayerDropItem(PlayerDropItemEvent event) {
-        setEventCancelled(event, "PlayerDropItem");
+        event.setCancelled(cancelPlayerDropItem);
     }
 
     @EventHandler
     public void onPlayerInteract(PlayerInteractEvent event) {
-        setEventCancelled(event, "PlayerInteract");
+        event.setCancelled(cancelPlayerInteract);
     }
 
     @EventHandler
     public void onPlayerInteractEntity(PlayerInteractEntityEvent event) {
-        setEventCancelled(event, "PlayerInteractEntity");
+        event.setCancelled(cancelPlayerInteractEntity);
     }
 
     @EventHandler
     public void onEntityDamageByEntity(EntityDamageByEntityEvent event) {
-        setEventCancelled(event, "EntityDamageByEntity");
+        event.setCancelled(cancelEntityDamageByEntity);
     }
 
     @EventHandler
     public void onEntityDamageByBlock(EntityDamageByBlockEvent event) {
-        setEventCancelled(event, "EntityDamageByBlock");
-    }
-
-    private <T extends Event & Cancellable> void setEventCancelled(T event, String configKey) {
-        event.setCancelled(WorldSimpleSet.main.getConfig().getBoolean(configKey));
+        event.setCancelled(cancelEntityDamageByBlock);
     }
 
 }

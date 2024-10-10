@@ -13,6 +13,7 @@ public class WssCommand implements CommandExecutor {
 
         try {
             WorldSimpleSet.main.reloadConfig();
+            WorldSimpleSet.main.loadConfig();
         }catch (Exception ex){
             i.sendMessage("Error");
         }
